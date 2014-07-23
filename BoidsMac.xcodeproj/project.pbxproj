@@ -21,6 +21,8 @@
 		3F5FCE1B197FF9D100442F91 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5FCDF4197FF9D100442F91 /* Cocoa.framework */; };
 		3F5FCE23197FF9D100442F91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3F5FCE21197FF9D100442F91 /* InfoPlist.strings */; };
 		3F5FCE25197FF9D100442F91 /* BoidsMacTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FCE24197FF9D100442F91 /* BoidsMacTests.m */; };
+		3F5FCE30197FFA4300442F91 /* Flock.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FCE2F197FFA4300442F91 /* Flock.m */; };
+		3F5FCE33197FFA6700442F91 /* Boid.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F5FCE32197FFA6700442F91 /* Boid.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		3F5FCE20197FF9D100442F91 /* BoidsMacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BoidsMacTests-Info.plist"; sourceTree = "<group>"; };
 		3F5FCE22197FF9D100442F91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3F5FCE24197FF9D100442F91 /* BoidsMacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoidsMacTests.m; sourceTree = "<group>"; };
+		3F5FCE2E197FFA4300442F91 /* Flock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flock.h; sourceTree = "<group>"; };
+		3F5FCE2F197FFA4300442F91 /* Flock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flock.m; sourceTree = "<group>"; };
+		3F5FCE31197FFA6700442F91 /* Boid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Boid.h; sourceTree = "<group>"; };
+		3F5FCE32197FFA6700442F91 /* Boid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Boid.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,10 @@
 				3F5FCE0C197FF9D100442F91 /* MyScene.h */,
 				3F5FCE0D197FF9D100442F91 /* AppDelegate.m */,
 				3F5FCE0F197FF9D100442F91 /* AppDelegate.h */,
+				3F5FCE2E197FFA4300442F91 /* Flock.h */,
+				3F5FCE2F197FFA4300442F91 /* Flock.m */,
+				3F5FCE31197FFA6700442F91 /* Boid.h */,
+				3F5FCE32197FFA6700442F91 /* Boid.m */,
 				3F5FCE10197FF9D100442F91 /* Spaceship.png */,
 				3F5FCE12197FF9D100442F91 /* Images.xcassets */,
 				3F5FCDFD197FF9D100442F91 /* Supporting Files */,
@@ -264,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5FCE33197FFA6700442F91 /* Boid.m in Sources */,
 				3F5FCE0B197FF9D100442F91 /* MyScene.m in Sources */,
+				3F5FCE30197FFA4300442F91 /* Flock.m in Sources */,
 				3F5FCE03197FF9D100442F91 /* main.m in Sources */,
 				3F5FCE0E197FF9D100442F91 /* AppDelegate.m in Sources */,
 			);

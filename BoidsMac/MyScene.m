@@ -23,7 +23,10 @@
         myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
                                        CGRectGetMidY(self.frame));
         
-        [self addChild:myLabel];
+        //[self addChild:myLabel];
+        keyTimer = 0;
+        flock = [[Flock alloc] init];
+        [flock setupFlock:self];
     }
     return self;
 }
@@ -45,8 +48,26 @@
     [self addChild:sprite];
 }
 
+-(void) keyDown:(NSEvent *)theEvent {
+    NSString *key = [theEvent charactersIgnoringModifiers];
+    unichar keyChar = [key characterAtIndex:0];
+    if (keyChar == NSUpArrowFunctionKey) {
+        if (keyTimer <= 0) {
+            flock.scatter = -flock.scatter;
+            keyTimer = 200;
+        }
+    }
+}
+
 -(void)update:(CFTimeInterval)currentTime {
     /* Called before each frame is rendered */
+    [flock moveAllBoidsToNewPositons];
+    
+    if (keyTimer > 0) {
+        keyTimer--;
+        if (keyTimer == 0)
+            NSLog(@"Ready");
+    }
 }
 
 @end

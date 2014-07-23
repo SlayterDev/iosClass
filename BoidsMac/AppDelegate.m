@@ -16,7 +16,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     /* Pick a size for the scene */
-    SKScene *scene = [MyScene sceneWithSize:CGSizeMake(1024, 768)];
+    SKScene *scene = [MyScene sceneWithSize:CGSizeMake(1200, 968)];
 
     /* Set the scale mode to scale to fit the window */
     scene.scaleMode = SKSceneScaleModeAspectFit;

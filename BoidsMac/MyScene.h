@@ -7,7 +7,12 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "Flock.h"
 
-@interface MyScene : SKScene
+@interface MyScene : SKScene {
+    Flock *flock;
+    
+    int keyTimer;
+}
 
 @end
